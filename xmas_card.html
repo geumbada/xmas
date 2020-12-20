@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메리 크리스마스!</title>
+
+    <link rel="shortcut icon" href="https://icons-for-free.com/iconfiles/png/512/christmas+holiday+shain+sky+star+tree+icon-1320185851991915307.png">
+
+    <meta property="og:image" content="https://github.com/geumbada/xmas/blob/main/banner.jpg?raw=true">
+    <meta property="og:title" content="메리 크리스마스!">
+    <meta property="og:description" content="크리스마스 카드 from.쥐수">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+            background-image: url("https://pngimg.com/uploads/envelope/envelope_PNG18366.png");
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+
+        }
+
+        .envelope-msg {
+            text-align: center;
+            color: white;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .mouse {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+
+            background-image: url("https://github.com/geumbada/xmas/blob/main/mouse_profile.jpg?raw=true");
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 5px solid white;
+
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+            color: brown;
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .mouse {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_mouse() {
+            alert("앗! 어떻게 찾았지?")
+            window.location.href = 'https://www.instagram.com/scntim/'
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"> </div>
+        <h2 class="envelope-msg">봉투를 열어봐. 스팸 아니야!<br>- 쥐수 -</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="mouse" onclick="go_mouse()"></div>
+        <h1>메리 크리스마스!</h1>
+        <div class="messagebox">
+            <p style="margin-top: 0px; text-align: center;">
+            <b>사랑하는 친구에게.</b> 
+            </p>
+            <p>
+                올해는 참 시간이 빨리 흐른 것 같아. 정신없이 세월을 보내다 보니 어느새 내년이 코앞이네. 그동안 너를 자주 보지 못 한 건 정말 아쉬운 일이야. 여러모로 힘들고 답답했던 해였어. 너는 어떻게 지냈니? 
+            </p>
+            <p>
+                고단한 나날을 보낼 때마다 너와 함께 보냈던 지난날들을 떠올리곤 해. 세상의 온도가 차갑게 식을수록 너와 함께 만든 추억은 더욱 따뜻하게 느껴져. 
+            </p>
+            <p>
+                나누고 싶은 얘기를 잔뜩 쌓아뒀는데 너와 만날 수 없구나. 하루빨리 코로나 사태가 종식되면 좋겠다. 
+           
+                우리 같이 맛집 투어 다닐 그날까지 조금만 더 견뎌보자. 전화할게. 너도 내가 생각날 때면 언제든 연락해. 
+            </p>
+            <p>
+                항상 건강하길 바랄게.<br>그럼 안녕. 메리 크리스마스.
+            </p>
+
+            <p class="from">2020. 12. 24.<br>쥐수가</p>
+        </div>
+    </div>
+</body>
+
+</html>
